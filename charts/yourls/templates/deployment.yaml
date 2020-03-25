@@ -147,8 +147,8 @@ spec:
             {{- toYaml .Values.metrics.resources | nindent 12 }}
 {{- end }}
       volumes:
-        - 
         {{- if .Values.persistence.enabled }}
+        -
           name: yourls-data
           persistentVolumeClaim:
             claimName: {{ .Values.persistence.existingClaim | default (include "yourls.fullname" .) }}
