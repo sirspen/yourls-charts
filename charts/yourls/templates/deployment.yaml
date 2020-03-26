@@ -13,6 +13,15 @@ spec:
       app: "{{ template "yourls.fullname" . }}"
       release: {{ .Release.Name | quote }}
   replicas: {{ .Values.replicaCount }}
+  {{- if .Values.rollingUpdates.enabled }}
+  strategy:
+    type: RollingUpdate
+    maxSurge: {{ .Values.maxSurge }}
+    maxUnavailable: {{ .Values.maxUnavailable }}
+  {{- else }}
+  strategy:
+    type: Recreate
+  {{- end }}
   template:
     metadata:
       labels:

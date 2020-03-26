@@ -251,6 +251,11 @@ affinity: {}
 podAnnotations: {}
 ## Prometheus Exporter / Metrics
 ##
+
+rollingUpdates:
+  enabled: true
+  maxSurge: 25%
+  maxUnavailable: 25%
 metrics:
   enabled: false
   image:
