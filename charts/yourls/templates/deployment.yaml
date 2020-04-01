@@ -75,7 +75,11 @@ spec:
               valueFrom:
                 secretKeyRef:
                 {{- if .Values.mariadb.enabled }}
+                  {{- if .Values.mariadb.existingSecret }}
+                  name: {{ template ".Values.mariadb.existingSecret" . }}
+                  {{- else }}
                   name: {{ template "mariadb.fullname" . }}
+                  {{- end }}
                   key: mariadb-password
                 {{- else }}
                   name: {{ printf "%s-%s" .Release.Name "externaldb" }}
@@ -90,7 +94,11 @@ spec:
             - name: YOURLS_PASS
               valueFrom:
                 secretKeyRef:
+                  {{- if .Values.existingSecret }}
+                  name: {{ template ".Values.existingSecret" . }}
+                  {{- else }}
                   name: {{ template "yourls.fullname" . }}
+                  {{- end }}
                   key: yourls-password
           {{- if .Values.extraEnv }}
             {{- toYaml .Values.extraEnv | nindent 12 }}

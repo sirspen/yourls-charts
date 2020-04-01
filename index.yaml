@@ -2,8 +2,8 @@ apiVersion: v1
 entries:
   yourls:
   - apiVersion: v2
-    appVersion: 1.7.3
-    created: "2020-03-26T10:34:06.4487702Z"
+    appVersion: 1.0.4
+    created: "2020-04-01T16:09:50.4344737+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -12,7 +12,25 @@ entries:
       - yourls-database
       version: 5.x.x
     description: Your Own URL Shortener
-    digest: b01acebdc48267b5058e5eca6f260057502fd5450e99d98a3caabf675c315183
+    digest: 9da4c5c6bd0ddebc03d43ed78697b4abe372c05837c36f02a139ac733bd6928e
+    icon: https://yourls.org/images/yourls-logo.png
+    name: yourls
+    type: application
+    urls:
+    - https://sirspen.github.io/yourls-charts/yourls-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 1.7.3
+    created: "2020-04-01T16:09:50.4274649+01:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - yourls-database
+      version: 5.x.x
+    description: Your Own URL Shortener
+    digest: 075519165033bdd548a42474faf8d6905f3be0548c05559c22e8be571f0eda32
     icon: https://yourls.org/images/yourls-logo.png
     name: yourls
     type: application
@@ -21,7 +39,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.7.3
-    created: "2020-03-26T10:34:06.4457777Z"
+    created: "2020-04-01T16:09:50.4204834+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -37,4 +55,4 @@ entries:
     urls:
     - https://sirspen.github.io/yourls-charts/yourls-1.0.1.tgz
     version: 1.0.1
-generated: "2020-03-26T10:34:06.4427858Z"
+generated: "2020-04-01T16:09:50.4135296+01:00"

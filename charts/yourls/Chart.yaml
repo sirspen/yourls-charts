@@ -2,8 +2,8 @@ apiVersion: v2
 name: yourls
 description: Your Own URL Shortener
 type: application
-version: 1.0.2
-appVersion: 1.7.3
+version: 1.0.3
+appVersion: 1.0.4
 icon: https://yourls.org/images/yourls-logo.png
 dependencies:
   - name: mariadb

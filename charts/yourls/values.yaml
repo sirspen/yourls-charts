@@ -28,6 +28,10 @@ yourlsSite: http://yourls
 ##
 yourlsUsername: user
 
+## Use existing secret (yourlsPassword)
+##
+#existingSecret: false
+
 ## Application password
 ## Defaults to a random 10-character alphanumeric string if not set
 ## ref: https://hub.docker.com/_/yourls
@@ -75,6 +79,11 @@ externalDatabase:
 mariadb:
   ## Whether to deploy a mariadb server to satisfy the applications database requirements. To use an external database set this to false and configure the externalDatabase parameters
   enabled: true
+
+  ## Use existing secret (ignores root, db and replication passwords)
+  ##
+  # existingSecret:
+
   ## Disable MariaDB replication
   replication:
     enabled: false
