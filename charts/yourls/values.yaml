@@ -81,8 +81,9 @@ mariadb:
   enabled: true
 
   ## Use existing secret (ignores root, db and replication passwords)
-  ## 
-  # existingSecret:
+  ## Requires mariadb-password and mariasb-root-password
+  ##
+  # existingSecret: secret-name
 
   ## Disable MariaDB replication
   replication:

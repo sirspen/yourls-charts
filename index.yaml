@@ -3,7 +3,7 @@ entries:
   yourls:
   - apiVersion: v2
     appVersion: 1.0.5
-    created: "2020-04-06T13:10:37.3252288+01:00"
+    created: "2020-04-06T13:40:42.4295637+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -12,7 +12,25 @@ entries:
       - yourls-database
       version: 5.x.x
     description: Your Own URL Shortener
-    digest: ea1f18719e078e6f5520d4f4473c848dba5e71fcad547fae04c2e14dc8c77dec
+    digest: b64f47c309803b12498ca43d9ac9ccd2c4fb9b60f2f712e69122f4f53793b48c
+    icon: https://yourls.org/images/yourls-logo.png
+    name: yourls
+    type: application
+    urls:
+    - https://sirspen.github.io/yourls-charts/yourls-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 1.0.5
+    created: "2020-04-06T13:40:42.4265717+01:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - yourls-database
+      version: 5.x.x
+    description: Your Own URL Shortener
+    digest: 35ac41ca2f342d2bc19490e7a04ef749b29126e2477d5494eb548c862e94939b
     icon: https://yourls.org/images/yourls-logo.png
     name: yourls
     type: application
@@ -21,7 +39,7 @@ entries:
     version: 1.0.4
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2020-04-06T13:10:37.3222372+01:00"
+    created: "2020-04-06T13:40:42.4245772+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -39,7 +57,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.7.3
-    created: "2020-04-06T13:10:37.3202425+01:00"
+    created: "2020-04-06T13:40:42.4216149+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -57,7 +75,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.7.3
-    created: "2020-04-06T13:10:37.3162814+01:00"
+    created: "2020-04-06T13:40:42.4190846+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -73,4 +91,4 @@ entries:
     urls:
     - https://sirspen.github.io/yourls-charts/yourls-1.0.1.tgz
     version: 1.0.1
-generated: "2020-04-06T13:10:37.3132608+01:00"
+generated: "2020-04-06T13:40:42.4160927+01:00"
