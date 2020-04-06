@@ -3,7 +3,7 @@ entries:
   yourls:
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2020-04-01T16:09:50.4344737+01:00"
+    created: "2020-04-06T11:04:37.267138+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -12,7 +12,7 @@ entries:
       - yourls-database
       version: 5.x.x
     description: Your Own URL Shortener
-    digest: 9da4c5c6bd0ddebc03d43ed78697b4abe372c05837c36f02a139ac733bd6928e
+    digest: 16014761a14b07d12fda4424643435b209ca01d588b7d438e3370c7e624a442b
     icon: https://yourls.org/images/yourls-logo.png
     name: yourls
     type: application
@@ -21,7 +21,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.7.3
-    created: "2020-04-01T16:09:50.4274649+01:00"
+    created: "2020-04-06T11:04:37.2641459+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -39,7 +39,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.7.3
-    created: "2020-04-01T16:09:50.4204834+01:00"
+    created: "2020-04-06T11:04:37.259647+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -55,4 +55,4 @@ entries:
     urls:
     - https://sirspen.github.io/yourls-charts/yourls-1.0.1.tgz
     version: 1.0.1
-generated: "2020-04-01T16:09:50.4135296+01:00"
+generated: "2020-04-06T11:04:37.2556501+01:00"
