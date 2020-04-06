@@ -76,7 +76,7 @@ spec:
                 secretKeyRef:
                 {{- if .Values.mariadb.enabled }}
                   {{- if .Values.mariadb.existingSecret }}
-                  name: {{ .Values.mariadb.existingSecret . }}
+                  name: {{ .Values.mariadb.existingSecret }}
                   {{- else }}
                   name: {{ template "mariadb.fullname" . }}
                   {{- end }}
@@ -95,7 +95,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   {{- if .Values.existingSecret }}
-                  name: {{ .Values.existingSecret . }}
+                  name: {{ .Values.existingSecret }}
                   {{- else }}
                   name: {{ template "yourls.fullname" . }}
                   {{- end }}
